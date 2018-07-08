@@ -1,0 +1,20 @@
+<div class="content" ng-controller="DonutController">
+	<input type="text" ng-model="search" placeholder="Search for some donuts" />
+	<button ng-click="order = 'name'">Order by Name</button>
+	<button ng-click="order = '-size'">Order by Size</button>
+	<ul id="donut-list">
+		<li ng-repeat="donut in donuts | orderBy: order | filter: search" ng-show="donut.available">
+			<img ng-src="{{donut.thumbnail}}" style="margin: -12px 10px 0 0; float: left; width: 50px;" 	 ng-show="donut.thumbnail" />
+			<h3>{{donut.name}} - {{donut.price | currency}}</h3>
+			<div class="remove" ng-click="removeDonut(donut)">x</div>
+			<span class="size" style="background: {{donut.colour}}">{{donut.size}}</span>
+		</li>
+	</ul>
+	<form ng-submit="addDonut()">
+		<input type="text" placeholder="name" ng-model="newDonut.name" />
+		<input type="text" placeholder="size" ng-model="newDonut.size" />
+		<input type="text" placeholder="price" ng-model="newDonut.price" />
+		<input type="submit" value="Add new Donut" />
+	</form>
+	<a href="" ng-click="removeAll()">Remove all Donuts</a>
+</div>

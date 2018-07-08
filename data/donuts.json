@@ -1,0 +1,29 @@
+[{
+	"name": "Choco",
+	"size": "medium",
+	"price": 10,
+	"colour": "#301917",
+	"available": true,
+	"thumbnail": "content/img/donut.jpg"
+}, {
+	"name": "Pink",
+	"size": "large",
+	"price": 12,
+	"colour": "#ff79a7",
+	"available": true,
+	"thumbnail": "content/img/donut.jpg"
+}, {
+	"name": "Sprinkles",
+	"size": "small",
+	"price": 13,
+	"colour": "#58c0ff",
+	"available": true,
+	"thumbnail": "content/img/donut.jpg"
+}, {
+	"name": "Custard",
+	"size": "medium",
+	"price": 13,
+	"colour": "#bca790",
+	"available": true,
+	"thumbnail": "content/img/donut.jpg"
+}]
